@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos González">
+  <meta name="description" content="Información de contacto oficial de nuestro puesto">
+  <title>Contactanos</title>
+  <link rel="icon" href="img/html5.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__h1">Puesto de Tacos</h1>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="about.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="/#menu">Menu</a>
+        </li>
+        <li>
+          <a href="horario.html">Horario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <figure>
+      <img src="img/tacos_close_up_1000x649.png" alt="Puedes contactarnos cuando gustes" title="Tacos listos para comer" width="1000" height="649">
+      <figcaption class="offscreen">Puesto de tacos</figcaption>
+    </figure>
+  </section>
+  
+  
+  <main class="main">
+    <article class="main__article">
+      <h3>Nuestro Local</h3>
+      
+      <Address>
+        555 TAco Temptation Lane, Suite T <br>
+        Kansas City, MO 55555-5555
+      </Address> 
+      
+      <p>
+        Llame al: <a href="tel:+525555555555">555-555-5555</a>
+      </p>
+    </article>
+
+<hr>
+
+    <article class="main__article">
+      <h2 class="contact__h2">Formulario para contactarnos</h2>
+      
+      <form action="https://httpbin.org/get" method="get" class="contact__form">
+        
+        <fieldset class="contact__fielset">
+          <legend class="offscreen">Mandanos un mensaje</legend>
+          
+          <p class="contact__p">
+            <label class="contact__label" for="nombre">Nombre:</label>
+            <input class="contact__input" type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+          </p>
+          <p class="contact__p">
+            <label class="contact__label" for="email">Email:</label>
+            <input class="contact__input" type="email" name="email" id="email" placeholder="Tu email" required>
+          </p>
+          <p class="contact__p">
+            <label class="contact__label" for="sugerencia">Sugerencias:</label>
+            <br>
+            <textarea class="contact__textarea" name="sugerencia" id="sugerencia" cols="30" rows="10" placeholder="Escribe tus sugerencias aquí"></textarea>
+          </p>
+        </fieldset>
+        
+        <br>
+        <button class="contact__button" type="submit">Enviar</button>
+        <button class="contact__button" type="reset">Resetear</button>
+      </form>
+    </article>
+    <hr>
+    
+    <a href="index.html">Inicio</a>
+    
+  </main>
+  
+  <hr>
+  
+  <footer class="footer">
+    <p>
+      <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+      <span class="nowrap">Puesto de Tacos</span>
+    </p>
+  </footer>
+  
+</body>
+</html>
